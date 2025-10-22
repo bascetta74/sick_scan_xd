@@ -1,0 +1,12 @@
+sick_tim_5xx_1:
+  ros__parameters:
+    min_ang: -0.7854
+    max_ang: 3.927
+    use_persistent_config: False
+
+sick_tim_5xx_2:
+  ros__parameters:
+    min_ang: -0.7854
+    max_ang: 3.927
+    use_persistent_config: False
+

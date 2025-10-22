@@ -12,7 +12,7 @@ print(r'If you have more than one network interface it may happen that no scanne
       r'To fix this problem change the parameter <UDP_IP = "192.168.0.255"> '
       r'to the broadcast address that ifconfig returns for your network interface e.g. "192.168.178.255".')
 UDP_IP = "192.168.0.255"
-UDP_PORT = 30718
+UDP_PORT = 2112
 RANDOM_KEY=random.randrange(4294967295)
 MESSAGE = bytes.fromhex('10000008ffffffffffffc8f4b6270102c0a8007effffff00')
 MESSAGE=MESSAGE.replace(bytes.fromhex('c8f4b627'),RANDOM_KEY.to_bytes(4, byteorder='big', signed=False))

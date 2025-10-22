@@ -1,0 +1,27 @@
+---
+# scan_to_scan_filter_chain:
+#   ros__parameters:
+#     filter1:
+#       name: "footprint_filter"
+#       type: "laser_filters/LaserScanFootprintFilter"
+#       params:
+#         footprint: "[[-0.28, -0.3], [-0.28, 0.4], [0.70, 0.4], [0.70, -0.3]]"
+#         min_angle: -3.14
+#         max_angle: 3.14
+#         max_range: 10.0
+# scan_to_scan_filter_chain:
+scan_filter_node:
+  ros__parameters:
+    filter1:
+      name: box_filter
+      type: laser_filters/LaserScanBoxFilter
+      params:
+        box_frame: base_link
+        max_x: 0.7
+        max_y: 0.5
+        max_z: 1.0
+        min_x: -0.4
+        min_y: -0.35
+        min_z: -0.5
+
+        invert: false
